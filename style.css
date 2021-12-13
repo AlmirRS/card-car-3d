@@ -4,45 +4,49 @@
     box-sizing: border-box;
   }
   
-  body {
+   body {
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    
-  }
-  .container {
-    width: 800px;
-    height: 700px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    perspective: 1000px;
-  }
-  .card {
-    transform-style: preserve-3d;
-    min-height: 60vh;
-    width: 35%;
-    border-radius: 30px;
-    padding: 0rem 50px;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+      
   }
   
-  .sneaker {
-    min-height: 20vh;
+  .container {
+    width: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px; 
+  }
+  
+  .cartao {
+    transform-style: preserve-3d;
+    min-height:80vh;
+    width: 25rem;
+    border-radius: 30px;
+    padding: 0rem 5rem;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+   
+    
+  }
+   
+  .tenis {
+    min-height: 35vh;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .sneaker img {
-    width: 150px;
+  
+  .tenis img {
+    width: 15rem;
     z-index: 2;
-    transition: all 0.75s ease-out;
+  /*transition: all 0.75s ease-out; */
   }
-  .circle {
-    width: 100px;
-    height: 100px;
+  .circulo {
+    width: 12rem;
+    height: 12rem;
     background: linear-gradient(
       to right,
       rgba(245, 70, 66, 0.75),
@@ -53,46 +57,50 @@
     z-index: 1;
   }
   
-  .info h1 {
-    font-size: 22px;
-    transition: all 0.75s ease-out;
+  .descricoes h1 {
+    font-size: 2.5rem;
+    /* transition: all 0.75s ease-out; */
   }
-  .info h3 {
-    font-size: 10px;
-    padding: 2rem 0rem;
+  
+  .descricoes h3 {
+    font-size: 0.9rem;
+    padding: 1rem 0rem;
     color: #585858;
     font-weight: lighter;
-    transition: all 0.75s ease-out;
+    /* transition: all 0.75s ease-out; */
   }
-  .sizes {
+  
+  .medidas {
     display: flex;
     justify-content: space-between;
-    transition: all 0.75s ease-out;
-    width: 150px;
+    /* transition: all 0.75s ease-out;
+    width: 150px; */
   }
-  .sizes button {
-    
-    padding: 0.5rem 1rem;
+  
+  .medidas button {    
+    padding: 0.3rem 1.1rem;
     background: none;
     border: none;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     border-radius: 30px;
-    align-items: center;
     cursor: pointer;
     font-weight: bold;
     color: #585858;
   }
+  
   button.active {
     background: #585858;
     color: white;
   }
-  .purchase {
-    margin-top: 3rem;
-    transition: all 0.75s ease-out;
+ 
+  .comprar {
+    margin-top: 4rem;
+    /* transition: all 0.75s ease-out; */
   }
-  .purchase button {
+   
+  .comprar button {
     width: 100%;
-    padding: 0.5rem 0rem;
+    padding: 1rem 0rem;
     background: #f54642;
     border: none;
     color: white;
