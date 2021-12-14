@@ -9,16 +9,15 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-      
+    justify-content: center;     
   }
   
   .container {
-    width: 50%; 
+    width: 80%; 
     display: flex;
     justify-content: center;
     align-items: center;
-    perspective: 1000px; 
+    perspective: 1000px;  
   }
   
   .cartao {
@@ -28,21 +27,19 @@
     border-radius: 30px;
     padding: 0rem 5rem;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
-   
-    
-  }
-   
+  }  
   .tenis {
     min-height: 35vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    transform-style: preserve-3d;
   }
   
   .tenis img {
-    width: 15rem;
-    z-index: 2;
-  /*transition: all 0.75s ease-out; */
+  width: 15rem;
+  transition: all 0.75s ease-out;
+  z-index: 2;
   }
   .circulo {
     width: 12rem;
@@ -54,27 +51,30 @@
     );
     position: absolute;
     border-radius: 50%;
-    z-index: 1;
   }
-  
+  .descricoes{
+    perspective: 1000px;
+    transform-style: preserve-3d;
+  }
   .descricoes h1 {
     font-size: 2.5rem;
-    /* transition: all 0.75s ease-out; */
+    transition: all 0.75s ease-out;
+    z-index: 1;
   }
-  
+
   .descricoes h3 {
     font-size: 0.9rem;
     padding: 1rem 0rem;
     color: #585858;
     font-weight: lighter;
-    /* transition: all 0.75s ease-out; */
+    transition: all 0.75s ease-out;
   }
   
   .medidas {
     display: flex;
     justify-content: space-between;
-    /* transition: all 0.75s ease-out;
-    width: 150px; */
+    transition: all 0.75s ease-out;
+    width: 150px;
   }
   
   .medidas button {    
@@ -95,7 +95,7 @@
  
   .comprar {
     margin-top: 4rem;
-    /* transition: all 0.75s ease-out; */
+    transition: all 0.75s ease-out;
   }
    
   .comprar button {

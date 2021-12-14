@@ -4,28 +4,28 @@ const container = document.querySelector(".container");
 
 //Moving Animation Event
 container.addEventListener('mousemove', (e) => {
-  let xAxis = (window.innerWidth / 2 - e.pageX) / 25;
-  let yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+  let xAxis = (window.innerWidth / 2 - e.pageX) / 20;
+  let yAxis = (window.innerHeight / 2 - e.pageY) / 20;
   cartao.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
 });
 
 // //Items
 const titulo = document.querySelector(".titulo");
 const tenis = document.querySelector(".tenis img");
-const comprar = document.querySelector(".comprar button");
+const comprar = document.querySelector(".comprar");
 const descricoes = document.querySelector(".descricoes h3");
-const medidas = document.querySelector(".medidas p");
+const medidas = document.querySelector(".medidas");
 
 
 // //Animacao entrando
   container.addEventListener("mouseenter", (e) => {
   cartao.style.transition = "none";
   //Popout
-  titulo.style.transform = "translateZ(150px)";
-  tenis.style.transform = "translateZ(200px) rotateZ(-45deg)";
-  descricoes.style.transform = "translateZ(125px)";
-  medidas.style.transform = "translateZ(100px)";
-  comprar.style.transform = "translateZ(75px)";
+  tenis.style.transform = "translateZ(180px) rotateZ(-45deg)";
+  titulo.style.transform = "translateZ(130px)";  
+  descricoes.style.transform = "translateZ(95px)";
+  medidas.style.transform = "translateZ(70px)";
+  comprar.style.transform = "translateZ(45px)";
 });
 //Animação saindo
 container.addEventListener("mouseleave", (e) => {
