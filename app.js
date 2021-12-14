@@ -4,8 +4,8 @@ const container = document.querySelector(".container");
 
 //Moving Animation Event
 container.addEventListener('mousemove', (e) => {
-  let xAxis = (window.innerWidth / 2 - e.pageX) / 20;
-  let yAxis = (window.innerHeight / 2 - e.pageY) / 20;
+  let xAxis = (window.innerWidth / 2 - e.pageX) / 25;
+  let yAxis = (window.innerHeight / 2 - e.pageY) / 25;
   cartao.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
 });
 
@@ -21,7 +21,7 @@ const medidas = document.querySelector(".medidas");
   container.addEventListener("mouseenter", (e) => {
   cartao.style.transition = "none";
   //Popout
-  tenis.style.transform = "translateZ(180px) rotateZ(-45deg)";
+  tenis.style.transform = "translateZ(180px) scaleX(-1)";
   titulo.style.transform = "translateZ(130px)";  
   descricoes.style.transform = "translateZ(95px)";
   medidas.style.transform = "translateZ(70px)";
